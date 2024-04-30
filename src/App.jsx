@@ -80,15 +80,70 @@ function App() {
         </Carousel>
       </div>
       {/* Aside & Flowers */}
-      <div>
+      <div className="flex w-[80%] m-auto mt-26 px-18">
         {/* Aside */}
-        <div>
+        <div className="flex w-[30%] flex-col gap-9">
           {/* Category */}
-          <div></div>
+          <div>
+            <h1 className="text-lg font-bold mt-26 text-left pl-4">
+              Categories
+            </h1>
+            <div className="flex justify-between">
+              <div className="flex flex-col justify-around h-[360px] text-left pl-7">
+                <p className="text-green-600">House Plants</p>
+                <p>Potter Plants</p>
+                <p>Seeds</p>
+                <p>Small Plants</p>
+                <p>Big Plants</p>
+                <p>Succulents</p>
+                <p>Trerrariums</p>
+                <p>Gardening</p>
+                <p>Accessories</p>
+              </div>
+              <div className="flex flex-col pr-6 justify-around h-[360px] text-left">
+                <p className="text-green-600">(33)</p>
+                <p>(12)</p>
+                <p>(65)</p>
+                <p>(39)</p>
+                <p>(23)</p>
+                <p>(17)</p>
+                <p>(19)</p>
+                <p>(13)</p>
+                <p>(18)</p>
+              </div>
+            </div>
+          </div>
           {/* price */}
-          <div></div>
-          {/* sale */}
-          <div></div>
+          <div className="w-[226px] h-[133px] pl-5">
+            <h1 className="text-lg font-bold">Price Range</h1>
+          </div>
+          {/* size */}
+          <div className="flex w-[268px] h-[143px] flex-col">
+            <div>
+              <h1 className="text-lg font-bold mt-26 text-left pl-4">Size</h1>
+              <div className="flex justify-between h-[120px]">
+                <div className="flex flex-col justify-around text-left pl-7">
+                  <p>Small</p>
+                  <p>Medium</p>
+                  <p>Large</p>
+                </div>
+                <div className="flex flex-col pr-6 justify-around text-left">
+                  <p>(119)</p>
+                  <p>(86)</p>
+                  <p>(78)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* Sale */}
+          <div className="h-[470px] bg-gradient-to-b from-green-600/[0.1] to-green-600/[0.03] leading-10">
+            <h1 className="text-5xl text-green-600 leading-10">Super Sale</h1>
+            <p className="text-2xl pt-3">UP TO 75 % OFF</p>
+            <img
+              src="https://s3-alpha-sig.figma.com/img/5e3c/6700/3f4b62655ec5dd62c1a46641197d5bbf?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IdMOuyGTVxHVPtfRLDyNgivEAuociD4yiC2oEVy0kpEY~aP02uwz-8dtL3-hvBJANGgLRkyWwwPxrYlw~3ZZAC-~PVgPvyds1Ez7bPEeU14qHuRN-78Ua1IpK3IFu-7K-hgATppNZ0byjsmqG6Ggb96YenJyLgnN9MAYdOyoxADJDavIAtVPmSIUEqDK3Vi1SdetxYKSHAaKm9j8oFJrHxARocnUAsLpX-eIn-FDuwCfhXcXDPyVD3cKp-Ic4oLsrd1n~hwGfOSGST58~TKSmlN0BeCgIZsksCgLv9PIhhb9mlnHorSoyecFSsWEqrUkRHhC8OlDSEctTSteKqXSyQ__"
+              alt=""
+            />
+          </div>
         </div>
         {/* Flowers */}
         <div>

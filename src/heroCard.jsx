@@ -4,7 +4,7 @@ const HeroCard = (props) => {
   return (
     <div className="flex flex-row">
       {/* hero left */}
-      <div className="w-[60%] pl-[40px]">
+      <div className="w-[60%] pl-[40px] h-[450px]">
         <h1 className="text-sm uppercase text-left pt-[68px]">{props.title}</h1>
         <h1 className="text-70 text-left uppercase font-black leading-[70px] text-[#3D3D3D]">
           {props.greenHeading}
@@ -23,7 +23,7 @@ const HeroCard = (props) => {
       {/* hero right */}
       <div className="h-[450px]">
         <img
-          className="flex absolute top-42 w-[350px] h-[350px] left-850"
+          className="flex absolute w-[350px] h-[350px]"
           src={props.img}
           alt=""
         />
