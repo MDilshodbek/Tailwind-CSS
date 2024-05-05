@@ -44,9 +44,19 @@ function App() {
             alt=""
           />
         </div>
-        <div className="flex gap-50 gap-[20px]">
-          <p className="cursor-pointer text-base">Home</p>
-          <p className="cursor-pointer text-base">Shop</p>
+        <div className="flex gap-50 gap-[20px] ">
+          <p className=" cursor-pointer text-base hover:border-b-[3px] border-green-600">
+            Home
+          </p>
+          <p className="cursor-pointer text-base hover:border-b-[3px] border-green-600">
+            Shop
+          </p>
+          <p className="cursor-pointer text-base hover:border-b-[3px] border-green-600">
+            Plant Care
+          </p>
+          <p className="cursor-pointer text-base hover:border-b-[3px] border-green-600">
+            Blogs
+          </p>
         </div>
         <div className="flex justify-center items-center gap-[30px]">
           <div className="gap-[30px] flex">
@@ -169,7 +179,7 @@ function App() {
           </div>
           {/* Sale */}
           <div className="h-[470px] bg-gradient-to-b from-green-600/[0.1] to-green-600/[0.03] leading-10">
-            <h1 className="font-normal text-[50px] text-green-600">
+            <h1 className="font-normal text-[50px] text-green-600 pt-[40px]">
               Super Sale
             </h1>
             <p className="text-2xl pt-3">UP TO 75 % OFF</p>
@@ -279,7 +289,7 @@ function App() {
       {/* Our Blogs */}
       <div className="h-[447px] m-auto mt-36 w-[80%]">
         <h1 className="font-bold text-3xl">Our Blog Posts</h1>
-        <p className="text-sm font-normal">
+        <p className="text-[14px] font-normal text-[#727272]">
           We are an online plant shop offering a wide range of cheap and trendy
           plants.
         </p>
@@ -348,7 +358,7 @@ function App() {
               Join
             </Button>
           </div>
-          <p className="text-sm font-normal">
+          <p className="text-[14px] font-normal text-[#727272]">
             We usually post offers and challenges in newsletter. We’re your
             online houseplant destination. We offer a wide range of houseplants
             and accessories shipped directly from our (green)house to yours!
@@ -367,33 +377,43 @@ function App() {
 
           <div className="flex gap-2.5 justify-between items-center">
             <img src={location} alt="" />
-            <p>70 West Buckingham Ave. Farmingdale, NY 11735</p>
+            <p className="text-[14px]">
+              70 West Buckingham Ave. Farmingdale, NY 11735
+            </p>
           </div>
           <div className="flex gap-2.5">
             <img src={mail} alt="" />
-            <p>contact@greenshop.com</p>
+            <p className="text-[14px]">contact@greenshop.com</p>
           </div>
           <div className="flex gap-2.5">
             <img className="w-[15px] h-[15px]" src={call} alt="" />
-            <p>+88 01911 717 490</p>
+            <p className="text-[14px]">+88 01911 717 490</p>
           </div>
         </div>
       </div>
       {/* footer */}
       <div className="flex h-[236px] w-[80%] m-auto justify-between pt-8 pl-6 text-left">
-        <div>
+        <div className="flex flex-col gap-[10px]">
           <h1 className="text-base font-bold">My Account</h1>
-          <p>My Account</p>
-          <p>Address</p>
-          <p>Wishlist</p>
+          <p className="text-[14px]">My Account</p>
+          <p className="text-[14px]">Address</p>
+          <p className="text-[14px]">Wishlist</p>
         </div>
-        <div>
+        <div className="flex flex-col gap-[10px]">
+          <h1 className="text-base font-bold">Help & Guide</h1>
+          <p className="text-[14px]">Help Center</p>
+          <p className="text-[14px]">How to buy</p>
+          <p className="text-[14px]">Shipping & Delivery</p>
+          <p className="text-[14px]">Product Policy</p>
+          <p className="text-[14px]">How to return</p>
+        </div>
+        <div className="flex flex-col gap-[10px]">
           <h1 className="text-base font-bold">Categories</h1>
-          <p>House Plants</p>
-          <p>Potter Plants</p>
-          <p>Seeds</p>
-          <p>Small Plants</p>
-          <p>Accesories</p>
+          <p className="text-[14px]">House Plants</p>
+          <p className="text-[14px]">Potter Plants</p>
+          <p className="text-[14px]">Seeds</p>
+          <p className="text-[14px]">Small Plants</p>
+          <p className="text-[14px]">Accesories</p>
         </div>
         <div>
           <h1 className="text-base font-bold">Social Media</h1>

@@ -9,4 +9,7 @@
 .slick-active button {
   background-color: #46a358 !important;
 }
-
+.ant-pagination-item-active:hover {
+  background-color: #46a358;
+  color: white !important;
+}

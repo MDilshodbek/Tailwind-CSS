@@ -32,22 +32,30 @@ const FlowerCard = (props) => {
 
 const Trends = (props) => {
   return (
-    <div className="flex h-[250px] relative">
-      <img
-        className="w-[50px] h-[100px] absolute bottom-0"
-        src={props.img}
-        alt=""
-      />
-      <div className="relative">
-        <img className="w-[292px] h-[292px] " src={props.img1} alt="" />
-      </div>
-      <div className="w-[60%] text-right mt-9">
-        <h1 className="font-black text-base uppercase">{props.title}</h1>
-        <h1 className="font-black text-base uppercase">{props.title1}</h1>
-        <p className="text-[14px] font-normal">{props.description}</p>
-        <Button className="bg-green-600 text-white mt-4">
-          Find More <ArrowRightOutlined />
-        </Button>
+    <div className="w-[80%] flex bg-[#FBFBFB] relative h-[250px] justify-between m-auto">
+      <div className="flex items-end">
+        <img
+          className="w-[50px] h-[100px] absolute bottom-0"
+          src={props.img}
+          alt=""
+        />
+        <div>
+          <img
+            className="w-[292px] h-[292px] bottom-[20px] absolute"
+            src={props.img1}
+            alt=""
+          />
+        </div>
+        <div className="flex flex-col w-[60%] items-end text-right mt-9 absolute right-0 bottom-[50px]">
+          <h1 className="font-black text-base uppercase">{props.title}</h1>
+          <h1 className="font-black text-base uppercase">{props.title1}</h1>
+          <p className="text-[14px] font-normal text-[#727272]">
+            {props.description}
+          </p>
+          <Button className="bg-green-600 text-white mt-4">
+            Find More <ArrowRightOutlined />
+          </Button>
+        </div>
       </div>
     </div>
   );
@@ -63,8 +71,10 @@ const Blog = (props) => {
       <div>
         <p className="text-sm font-medium text-green-600">{props.dates}</p>
         <h1 className="text-xl font-bold">{props.title}</h1>
-        <p className="text-[14px] font-normal">{props.description}</p>
-        <p className="text-sm font-medium">{props.read}</p>
+        <p className="text-[14px] font-normal text-[#727272]">
+          {props.description}
+        </p>
+        <p className="font-semibold text-[14px]">{props.read}</p>
       </div>
     </div>
   );
@@ -79,7 +89,9 @@ const News = (props) => {
       {/* newsletter detail */}
       <div className="text-left w-[80%]">
         <h1 className="text-lg font-bold">{props.title}</h1>
-        <p className="text-sm font-normal">{props.description}</p>
+        <p className="text-[14px] font-normal text-[#727272]">
+          {props.description}
+        </p>
       </div>
     </div>
   );
