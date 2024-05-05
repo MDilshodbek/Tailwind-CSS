@@ -1,12 +1,25 @@
 import { Button } from "antd";
 import { ArrowRightOutlined } from "@ant-design/icons";
+import cart from "./assets/cart.png";
+import heart from "./assets/heart.png";
+import search from "./assets/search.png";
 
 const FlowerCard = (props) => {
   return (
-    <div className="w-[258px]">
+    <div className="w-[258px] hover:border-t border-green-600 group relative">
       {/* flowerWrapper */}
+      {props.discount && (
+        <div className="flex justify-center items-center w-[80px] h-[30px] bg-green-600 absolute left-[-4px] top-[-10px]">
+          <p className="text-white">{props.discount}</p>
+        </div>
+      )}
       <div className="bg-[#FBFBFB]">
-        <img className="" src={props.img} alt="" />{" "}
+        <img className="w-[250px] h-[250px]" src={props.img} alt="" />
+      </div>
+      <div className="flex justify-center items-center gap-[26px] opacity-0 group-hover:opacity-100">
+        <img src={cart} alt="" />
+        <img src={heart} alt="" />
+        <img src={search} alt="" />
       </div>
       {/* flowerDetail */}
       <div className="text-left pt-3">

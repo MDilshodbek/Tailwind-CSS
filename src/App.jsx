@@ -1,7 +1,8 @@
 import "./App.css";
 import HeroCard from "./heroCard";
-import { FlowerCard, Trends, Blog, News } from "./flowerCard";
 import SliderComponent from "./SliderComponent";
+
+import { FlowerCard, Trends, Blog, News } from "./flowerCard";
 import Selectable from "./select";
 import { Button, Badge, Carousel, Pagination } from "antd";
 import {
@@ -9,7 +10,6 @@ import {
   BellOutlined,
   ShoppingCartOutlined,
   LoginOutlined,
-  DownOutlined,
 } from "@ant-design/icons";
 
 //Images
@@ -34,10 +34,7 @@ import youtube from "./assets/youtube.png";
 
 function App() {
   return (
-    <div
-      className="bg-white w-[100%] flex flex-col font-sans text-black
-    "
-    >
+    <div className="bg-white w-[100%] flex flex-col font-sans text-black">
       {/* Navbar */}
       <div className="flex justify-between w-[80%] m-auto h-[78px] items-center border-b-[0.3px] border-green-600 border-opacity-50">
         <div>
@@ -55,7 +52,7 @@ function App() {
           <div className="gap-[30px] flex">
             <SearchOutlined className="text-xl" />
             <BellOutlined className="text-xl" />
-            <Badge dot>
+            <Badge count={6} color="#46A358" size="small">
               <ShoppingCartOutlined className="text-xl" />
             </Badge>
           </div>
@@ -139,40 +136,15 @@ function App() {
             <h1 className="text-lg font-bold">Price Range</h1>
             <SliderComponent />
             <p>Price: 20-30</p> */}
-          <div class="mt-[15px]">
-            <h3 class="font-bold">Price Range</h3>
-            <div class="ant-slider css-k7429z ant-slider-horizontal">
-              <div class="ant-slider-rail"></div>
-              <div
-                class="ant-slider-track ant-slider-track-1"
-                style="left: 0%; width: 100%;"
-              ></div>
-              <div class="ant-slider-step"></div>
-              <div
-                class="ant-slider-handle ant-slider-handle-1"
-                tabindex="0"
-                role="slider"
-                aria-valuemin="0"
-                aria-valuemax="1000"
-                aria-valuenow="0"
-                aria-disabled="false"
-                style="left: 0%; transform: translateX(-50%);"
-              ></div>
-              <div
-                class="ant-slider-handle ant-slider-handle-2"
-                tabindex="0"
-                role="slider"
-                aria-valuemin="0"
-                aria-valuemax="1000"
-                aria-valuenow="1000"
-                aria-disabled="false"
-                style="left: 100%; transform: translateX(-50%);"
-              ></div>
-            </div>
-            <p class="font-normal">
-              Price: <span class="font-bold text-[#46A358]">0$ - 1000$</span>
+          <div className="mt-[15px]">
+            <h3 className="font-bold">Price Range</h3>
+            <div className="ant-slider css-k7429z ant-slider-horizontal"></div>
+            <SliderComponent />
+            <p className="font-normal">
+              Price:{" "}
+              <span className="font-bold text-[#46A358]">0$ - 1000$</span>
             </p>
-            <button class="mt-[16px] bg-[#46A358] text-white px-[23px] py-[8px] rounded-lg">
+            <button className="mt-[16px] bg-[#46A358] text-white px-[23px] py-[8px] rounded-lg">
               Filter
             </button>
           </div>
@@ -238,6 +210,7 @@ function App() {
                 img="https://s3-alpha-sig.figma.com/img/4826/f3a4/1a2148d881d8376b26471cced915b1bb?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RBwZ7AfaEHj3Ml2lSOAMnxtbrj9LMv~gzTQ0V3BMHW4qAUDgBsZnKpsQoo3mnrKZOsYxQnhYUiiz8-xA5blrtexHlJkDJ2CVqE-y4F9vGabH-zeFHOu1QDVXRKzIQpGqLfK~~tfyhlZq42ZP3eAg6Bg4uabQAWJPbGPymITITNDOTzO3rDwblPDSn-HPQIA1~~F8DsKgISxitBY7zs6bd1SucbO2oZteNpMK-T~4cotpsmpvtxT3NKPQpQq5yWidihCYn--7W9E8zC3~-k41TnLXp7CjqiKTJ8Z~RwfbW7I-aeoSUkE7CDcqlKoU7KOiqms4BOug6roZCEub3FVOUA__"
               />
               <FlowerCard
+                discount="13% OFF"
                 title="African Violet"
                 price="$119.00"
                 img="https://s3-alpha-sig.figma.com/img/7c59/7aa9/1ee5df5d1fd65d8184246c0c9918f920?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qePW2P~4ee6PGvkm3il2uhwuv44DjX33i~oX4O524NFCvirG9Pa~hjcywsOmRgmBv-78O4S6vvFZoQ9AuuR72JukFXRk3UfLFSuOh6YGhWx9fg1v5aWySuQVCSo3sJvGDSjlcVdIvcV2GxOMOQugO6DtY2GblC9DgL0M9LSRI5Bvb0s1R8RQbVLs4h6pL~MKWFAjFUfGXtj7sBdL3t2bvs470QrpDOjE1oGvYIaO~HWrH28-pAAsMYA~gPCNLyyJwoupJsip5Kr-pHMWw0xlh2ZpgWONvNUNFrGqxpzAnZSFrwNLvRqL-~NqnhAGARsIRjBLS2MU1iWkyCs2LUS4rw__"
