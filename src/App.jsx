@@ -1,6 +1,6 @@
 import "./App.css";
 import HeroCard from "./heroCard";
-import SliderComponent from "./SliderComponent";
+import Ranger from "./priceRange";
 
 import { FlowerCard, Trends, Blog, News } from "./flowerCard";
 import Selectable from "./select";
@@ -142,23 +142,9 @@ function App() {
             </div>
           </div>
           {/* price */}
-          {/* <div className="w-[226px] h-[133px] pl-5">
-            <h1 className="text-lg font-bold">Price Range</h1>
-            <SliderComponent />
-            <p>Price: 20-30</p> */}
-          <div className="mt-[15px]">
-            <h3 className="font-bold">Price Range</h3>
-            <div className="ant-slider css-k7429z ant-slider-horizontal"></div>
-            <SliderComponent />
-            <p className="font-normal">
-              Price:{" "}
-              <span className="font-bold text-[#46A358]">0$ - 1000$</span>
-            </p>
-            <button className="mt-[16px] bg-[#46A358] text-white px-[23px] py-[8px] rounded-lg">
-              Filter
-            </button>
+          <div>
+            <Ranger />
           </div>
-          {/* </div> */}
           {/* size */}
           <div className="flex w-[268px] h-[143px] flex-col">
             <div>
